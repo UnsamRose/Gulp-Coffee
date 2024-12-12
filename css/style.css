@@ -119,3 +119,24 @@ footer a {
   display: block;
   margin: 0 1rem 3rem 1rem;
 }
+
+
+
+/* Styling for about page for mobile screens */
+@media only screen and (max-width: 600px) {
+  .main {
+    flex-flow: column;
+  }
+
+  figure  {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    position:relative;
+    top:50%; 
+    left:35%;
+  }
+}
