@@ -190,3 +190,22 @@ footer a {
     justify-content: space-evenly;
   }
 }
+
+/* styling for product tablet view */
+@media only screen and (min-width: 600px) {
+  .header-and-p {
+    /* flex-direction: column; */
+    /* width: 50%; */
+    width: 66%;
+    /* justify-content: space-evenly; */
+  }
+
+  .product-images {
+    align-self: center;
+    width: 33%;
+  }
+
+  .products-style {
+    margin-bottom:20px;
+  }
+}
