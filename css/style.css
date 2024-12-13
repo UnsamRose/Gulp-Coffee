@@ -64,6 +64,10 @@ nav a:hover {
   background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
   padding-bottom: 300px;
 }
+.main-bkgd-product {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
 /* sits inside of the white background, centered */
 .main {
   max-width: 1200px;
@@ -74,6 +78,14 @@ nav a:hover {
   justify-content: space-between;
 }
 .main-tablet {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.main-product {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
@@ -226,6 +238,8 @@ footer a {
   .product-images-tablet {
     align-self: center;
     width: 33%;
+    padding-right: 12px;
+
   }
   .product-images-desktop {
     display: none;
@@ -237,6 +251,16 @@ footer a {
     flex-direction: row;
   }
   .products-style-desktop {
+    display: none;
+  }
+  .main-bkgd-product{
+    display: none;
+  }
+}
+
+/* tablet view dissapears on mobile */
+@media only screen and (max-width: 600px) {
+  .main-bkgd-tablet {
     display: none;
   }
 }
