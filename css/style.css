@@ -141,6 +141,11 @@ footer a {
     top:50%; 
     left:35%;
   }
+
+  nav ul {
+    flex-flow: column;
+    align-items: center;
+  }
 }
 
 /* Styling for about page for tablet screens */
