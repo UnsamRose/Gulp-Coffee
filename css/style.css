@@ -122,6 +122,12 @@ footer a {
   margin: 0 1rem 3rem 1rem;
 }
 
+/* product mobile default */
+.product-images {
+  align-self: center;
+  width: 300px;
+}
+
 
 
 /* Styling for about page for mobile screens */
@@ -158,6 +164,7 @@ footer a {
   }
 }
 
+/* Styling for product desktop page */
 @media only screen and (min-width: 900px) {
   .products-style {
     flex-direction: row;
@@ -165,12 +172,21 @@ footer a {
     display: flex;
   }
 
-  #header-and-p {
+  .header-and-p {
     flex-direction: column;
+    width: 33%;
     justify-content: space-evenly;
   }
 
   .product-images {
     align-self: center;
+    width: 33%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .header-and-p {
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 }
