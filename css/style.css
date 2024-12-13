@@ -77,6 +77,7 @@ figure {
   flex-basis: 25%;
   background-color: #59331d;
   border-radius: 10px;
+  padding-bottom: 12px;
 }
 figure img {
   border-top-left-radius: 10px;
@@ -85,6 +86,7 @@ figure img {
 figcaption {
   color: #f2f2f2;
   padding: 0.5rem;
+  margin-left: 8px;
 }
 .button {
   display: inline-block;
@@ -138,5 +140,15 @@ footer a {
     position:relative;
     top:50%; 
     left:35%;
+  }
+}
+
+/* Styling for about page for tablet screens */
+@media only screen and (max-width: 900px) {
+  figure  {
+    height: fit-content;
+  }
+  figcaption{
+    padding: 12px;
   }
 }
