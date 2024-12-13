@@ -157,3 +157,20 @@ footer a {
     padding: 12px;
   }
 }
+
+@media only screen and (min-width: 900px) {
+  .products-style {
+    flex-direction: row;
+    gap: 20px;
+    display: flex;
+  }
+
+  #header-and-p {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .product-images {
+    align-self: center;
+  }
+}
