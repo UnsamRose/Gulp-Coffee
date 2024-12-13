@@ -60,8 +60,20 @@ nav a:hover {
   background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
   padding-bottom: 300px;
 }
+.main-bkgd-tablet {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
 /* sits inside of the white background, centered */
 .main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.main-tablet {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
@@ -122,7 +134,7 @@ footer a {
   margin: 0 1rem 3rem 1rem;
 }
 
-/* product mobile default */
+/* TODO: product mobile default */
 .product-images {
   align-self: center;
   width: 300px;
@@ -166,12 +178,19 @@ footer a {
 
 /* Styling for product desktop page */
 @media only screen and (min-width: 900px) {
-  .products-style {
+  .products-style-tablet {
+    display: none;
+  }
+  .products-style-desktop {
     flex-direction: row;
     gap: 20px;
     display: flex;
   }
-  .product-images {
+
+  .product-images-tablet {
+    display: none;
+  }
+  .product-images-desktop {
     align-self: center;
     width: 33%;
   }
@@ -179,6 +198,12 @@ footer a {
     flex-direction: column;
     width: 33%;
     justify-content: space-evenly;
+  }
+  .main-tablet {
+    display: none;
+  }
+  .main-bkgd-tablet {
+    display: none;
   }
 }
 
@@ -198,12 +223,20 @@ footer a {
     /* justify-content: space-evenly; */
   }
 
-  .product-images {
+  .product-images-tablet {
     align-self: center;
     width: 33%;
   }
+  .product-images-desktop {
+    display: none;
+  }
 
-  .products-style {
+  .products-style-tablet {
     margin-bottom:20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .products-style-desktop {
+    display: none;
   }
 }
