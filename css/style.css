@@ -171,28 +171,26 @@ footer a {
     gap: 20px;
     display: flex;
   }
-
-  .header-and-p {
-    flex-direction: column;
-    width: 33%;
-    justify-content: space-evenly;
-  }
-
   .product-images {
     align-self: center;
     width: 33%;
   }
-}
-
-@media only screen and (min-width: 600px) {
   .header-and-p {
     flex-direction: column;
+    width: 33%;
     justify-content: space-evenly;
   }
 }
 
+/* @media only screen and (min-width: 600px) {
+  .header-and-p {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+} */
+
 /* styling for product tablet view */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 900px) {
   .header-and-p {
     /* flex-direction: column; */
     /* width: 50%; */
