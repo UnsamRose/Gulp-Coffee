@@ -31,7 +31,23 @@
           <a class="button" href="https://uxuicurriculum.wixsite.com/gulproast">Contact Us</a>
         </article>
         <figure>
-          <img src="https://assets.codepen.io/6306176/gulp-pouring-coffee-vertical.jpg" alt="Making pour-over coffee at our shop." />
+          <picture>
+            <source srcset="img/gulp-pouring-coffee-horizontal-sm.jpg" media="(max-width: 600px)">
+            <source srcset="img/gulp-pouring-coffee-vertical.jpg" media="(max-width: 1500px)">
+            <source srcset="img/gulp-pouring-coffee-horizontal.jpg">
+            <!-- <img src="img/gulp-pouring-coffee-horizontal.jpg" alt="Flowers" style="width:auto;"> -->
+            <img src="https://assets.codepen.io/6306176/gulp-pouring-coffee-vertical.jpg" alt="Making pour-over coffee at our shop." />
+          </picture>
+
+          <!-- <img
+            srcset="img/gulp-pouring-coffee-horizontal.jpg 480w, img/gulp-pouring-coffee-vertical.jpg 800w"
+            sizes="(max-width: 600px) 480px,
+                  800px"
+            src="img/gulp-pouring-coffee-vertical.jpg"
+            alt="Elva dressed as a fairy" /> -->
+            <!-- <img src="img/gulp-pouring-coffee-horizontal.jpg" srcset="img/gulp-pouring-coffee-vertical.jpg 250px" /> -->
+            <!-- <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva"> -->
+          <!-- <img src="https://assets.codepen.io/6306176/gulp-pouring-coffee-vertical.jpg" alt="Making pour-over coffee at our shop." /> -->
           <figcaption>Our pour-over coffee is known for its freshness and amazing taste.</figcaption>
         </figure>
       </section>
